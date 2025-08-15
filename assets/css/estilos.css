@@ -1,0 +1,113 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #f0f0f0; /* Color de fondo del body */
+}
+
+.logo {
+  width: 220px;
+}
+
+/* Hero Section */
+
+header {
+  position: relative;
+  color: #ffffff;
+}
+.perfil {
+  float: left;
+  width: 300px;
+  height: 300px;
+  shape-outside: circle(50%);
+  clip-path: circle(50%);
+}
+ 
+.perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#Hero-Section {
+  background-image: url("../img/portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 50vh;
+}
+
+#Hero-Section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#Hero-Section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-info {
+  background-color: #5bb7b6 !important;
+}
+
+.btn-outline-info {
+  background-color: transparent !important;
+  border: 2px solid #5bb7b6 !important;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Secciones */
+
+#Acerca-de-mi {
+  scroll-margin-top: 80px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#Portafolio {
+  scroll-margin-top: 40px;
+  background-color: #5bb7b6;
+}
+
+#Contacto {
+  scroll-margin-top: 80px;
+}
+
+/* Portafolio */
+
+#Portafolio .image-top {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Contacto */
+
+#Contacto form label {
+  font-weight: 700;
+  color: #373a3c;
+}
+
+@media (max-width: 768px) {
+  #Contacto form label {
+    font-weight: 400;
+  }
+
+  .navbar-brand {
+    width: 100px;
+  }
+}
